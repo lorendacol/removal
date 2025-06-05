@@ -1,0 +1,26 @@
+/* For information on how to create your own theme, please see:
+http://ionicframework.com/docs/theming/ */
+
+/* Custom Searchbar Styles */
+.custom-searchbar {
+  --background: var(--ion-color-light);
+  --border-radius: 8px;
+  --box-shadow: none;
+  --placeholder-color: var(--ion-color-medium);
+  --icon-color: var(--ion-color-medium);
+  margin: 0;
+  padding: 0;
+}
+
+.custom-searchbar.searchbar-has-focus {
+  --background: var(--ion-color-light-shade);
+}
+
+/* Add padding to the content */
+.ion-padding {
+  padding: 16px;
+}
+
+.ion-text-center {
+  text-align: center;
+}
