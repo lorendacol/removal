@@ -33,9 +33,9 @@ const Menu: React.FC = () => {
     const [showToast, setShowToast] = useState(false);
     
     const path = [
-        {name:'Home', url: '/it35-lab/app/home', icon: homeOutline},
-        {name:'About', url: '/it35-lab/app/about', icon: rocketOutline},
-        {name:'Profile', url: '/it35-lab/app/profile', icon: settingsOutline},
+        {name:'Home', url: '/removal/app/home', icon: homeOutline},
+        {name:'About', url: '/removal/app/about', icon: rocketOutline},
+        {name:'Profile', url: '/removal/app/profile', icon: settingsOutline},
     ]
 
     useEffect(() => {
@@ -57,7 +57,7 @@ const Menu: React.FC = () => {
         if (!error) {
             setShowToast(true);
             setTimeout(() => {
-                navigation.push('/it35-lab', 'back', 'replace'); 
+                navigation.push('/removal', 'back', 'replace'); 
             }, 300); 
         } else {
             setErrorMessage(error.message);
@@ -95,13 +95,13 @@ const Menu: React.FC = () => {
                 </IonMenu>
                 
                 <IonRouterOutlet id="main">
-                    <Route path="/it35-lab/app/home" component={Home} />
-                    <Route exact path="/it35-lab/app/about" component={About} />
-                    <Route exact path="/it35-lab/app/profile" component={EditProfile} />
-                    <Route exact path="/it35-lab/app/home/details" component={Details} />
+                    <Route path="/removal/app/home" component={Home} />
+                    <Route exact path="/removal/app/about" component={About} />
+                    <Route exact path="/removal/app/profile" component={EditProfile} />
+                    <Route exact path="/removal/app/home/details" component={Details} />
 
-                    <Route exact path="/it35-lab/app">
-                        <Redirect to="/it35-lab/app/home"/>
+                    <Route exact path="/removal/app">
+                        <Redirect to="/removal/app/home"/>
                     </Route>
                 </IonRouterOutlet>
 
