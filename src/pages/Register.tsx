@@ -195,7 +195,7 @@ const Register: React.FC = () => {
                     </IonButton>
 
                     <IonButton 
-                        routerLink="/it35-lab" 
+                        routerLink="/removal" 
                         expand="full" 
                         fill="clear" 
                         shape="round" 
@@ -238,7 +238,7 @@ const Register: React.FC = () => {
                             <p>Your account has been created successfully.</p>
                             <p>Please check your email address.</p>
                         </IonText>
-                        <IonButton routerLink="/it35-lab" routerDirection="back" color="primary">
+                        <IonButton routerLink="/removal" routerDirection="back" color="primary">
                             Go to Login
                         </IonButton>
                     </IonContent>

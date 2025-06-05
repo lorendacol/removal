@@ -47,7 +47,7 @@ const Login: React.FC = () => {
     setShowToast(true); 
 
     setTimeout(() => {
-      navigation.push('/it35-lab/app', 'forward', 'replace');
+      navigation.push('/removal/app', 'forward', 'replace');
     }, 300);
   };
 
@@ -149,7 +149,7 @@ const Login: React.FC = () => {
 
           {/* Register Button */}
           <IonButton 
-            routerLink="/it35-lab/register" 
+            routerLink="/removal/register" 
             expand="full" 
             fill="clear" 
             shape='round' 
